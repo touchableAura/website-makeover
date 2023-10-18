@@ -43,8 +43,9 @@
 
       <div class="header">
         <div class="title">
-          <h1><span class="nowrap">Evan Cameron</span>
-          </h1>
+          <a href="../index.html">
+            <h1><span class="nowrap">Evan Cameron</span></h1>
+          </a>
         </div>
         <div class="job-title">
           <h2 id="dev">Web Developer</h2>
@@ -67,15 +68,15 @@
               <span class="material-symbols-outlined"> folder </span>
               <p class="nowrap">&nbsp;react - exploring giphy api</p>
             </button>
-            <a class="alt-anchor" href="pages/code/network.html">
-              <button class="python open-folder" id="item3" >
+            <a class="alt-anchor" href="./network.html">
+              <button class="python" id="item3" >
                 <span class="material-symbols-outlined">
-                    folder_open
+                    folder
                     </span>
                 <p class="nowrap">&nbsp;python - network scanner</p>
               </button> </a>
-            <button class="python" id="item4">
-              <span class="material-symbols-outlined"> folder </span>
+            <button class="python open-folder" id="item4">
+              <span class="material-symbols-outlined"> folder_open </span>
               <p class="nowrap">&nbsp;python - logfile analyzer</p>
             </button>
             <button class="js" id="item5">
@@ -156,20 +157,18 @@
         <div class="content">
 
           <div class="content-intro">
-            <h3 class="title nowrap">Network Scanner</h3>
+            <h3 class="title nowrap">Log File Parser</h3>
             <h3 class="type"> Python</h3>
           </div>
           
           <div class="description">
-            <img src="./media/network.png" alt="" />
+            <img src="./media/logfile.png" alt="" />
             <div class="project-text">
-                <p class="paragraph">This Python program is a network scanner that allows a user to choose between two scanning modes: ICMP (Internet Control Message Protocol) or TCP (Transmission Control Protocol). The program is designed to identify active hosts or open ports within a specified IP address range.</p>
-
-                <p>In the ICMP mode, the program sends ICMP echo requests (commonly known as pings) to a range of IP addresses. 
-                    
-                In the TCP mode, the program scans a specific IP address for open ports.</p> 
-                    
-                <p>Overall, this tool helps users identify active hosts or open ports on a network, making it useful for network diagnostics and security assessments.</p>
+                <p class="paragraph">This Python program analyzes log entries from a file. It does the following:
+                  <br><br>Reads log entries from a file and extracts information like timestamps, hostnames, components, actions, process IDs, and messages.
+                  <br><br>Counts and displays the top three most common components mentioned in the log entries.
+                  <br><br>Classifies log entries into "Working Hours" or "After Hours" based on their timestamps.
+                  <br><br>Creates a plot that visualizes the usage of the top three components during working hours and after hours.</p>
                 <a class="alt-anchor"><p class="github-link"><span class="material-symbols-outlined">
                     open_in_new
                     </span>Download the GitHub Repo &nbsp;</p></a>

@@ -390,10 +390,11 @@ font-size: calc(190px + 1vh);
   background-color: #343434;
   background-color: rgb(34, 34, 34);
   color: rgb(254, 254, 105);
-  color:rgb(155, 105, 254) ;
+  
   color:#343434;
   color:#ffffff;
   color: rgb(254, 254, 125);
+  color:rgb(155, 105, 254) ;
   /* border-bottom: 1px solid rgb(155, 105, 254); */
   padding: 1vw;
   margin-left: 2vh;
