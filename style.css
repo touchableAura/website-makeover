@@ -441,7 +441,7 @@ font-size: calc(190px + 1vh);
 {
   height: 95%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;  
 }
 
 .coverphoto
