@@ -10,6 +10,8 @@ body {
   padding: 0;
   color: rgb(112, 69, 255);
   color: #202020;
+
+  background-color: #343434;
 }
 
 .container {
@@ -813,7 +815,7 @@ color: rgb(254, 254, 105);
     font-size: calc(12px + 0.6vh);
     text-decoration: none;
     padding: 2vh;
-    color: rgb(219, 27, 27);
+    /* color: rgb(219, 27, 27); */
   }
 
   ul {
@@ -828,16 +830,104 @@ color: rgb(254, 254, 105);
     border: 1px rgb(75, 48, 158) dotted;
   }
 
-  /* WebKit (Safari and some versions of Chrome) */
-  ::-webkit-scrollbar-thumb {
-    background-color: #08176b; /* Blue color for the thumb */
+  .description
+  {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  ::-webkit-scrollbar-track {
-    background-color: #08176b; /* Blue color for the track */
+  .content-intro
+  {
+    padding-bottom: 2vh;
+  }
+}
+
+@media (max-width: 780px) {
+
+  .header
+  {
+    display: flex;
+    flex-direction: column;
   }
 
-  ::-webkit-scrollbar-corner {
-    background-color: #08176b; /* Blue color for the corner */
+  .title
+  {
+    margin: 0;
+    padding-top: 5vh;
+  }
+
+  .job-title
+  {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3vh;
+  }
+
+  .main
+  {
+    /* padding-top: 2vh; */
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .navs
+  {
+    min-width: 100vw;
+    max-width: none;
+
+    height:25vh;
+  }
+
+  button
+  {
+    width: 100vw;
+  }
+
+  .container
+  {
+    background-color: #343434;
+  }
+
+  .title
+  {
+    padding: 0;
+  }
+
+  .type
+  {
+    visibility: hidden;
+  }
+
+  #dev
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #stack
+  {
+
+  }
+}
+
+@media (max-width: 780px) {
+  h1 
+  {
+    font-size: 36px;
+    margin: 0;
+  }
+  #dev
+  {
+    padding-bottom: 1vh;
+  }
+
+  #stack
+  {
+    padding-top: 1vh;
+    padding-left: 2vh;
   }
 }
